@@ -21,10 +21,16 @@ body {
   margin: 0;
   padding-top: .5em;
   padding-left: .6em;
+  padding-right: .5em;
+  padding-bottom: .5em;
 }
 
 img {
   width: 100%;
+}
+
+img:nth-child(even) {
+  display: none;
 }
 
 @media only screen and (min-width: 25em) {
@@ -34,22 +40,43 @@ img {
     width: 49%;
   }
 
+  img:nth-child(even) {
+    display: inline-block;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
 
+  body {
+    padding-left: 1em;
+  }
+
   img {
     display: inline-block;
+    width: 32%;
+  }
+
+  img:first-child {
+    display: none;
   }
 
 }
 
 @media only screen and (min-width: 60em) {
 
+  body {
+    padding-left: 1em;
+  }
+
   img {
     display: inline-block;
     vertical-align: middle;
     width: 24%;
+  }
+
+  img:first-child {
+    display: inline-block;
   }
 
 }
