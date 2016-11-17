@@ -23,18 +23,25 @@ body {
 
 @media only screen and (min-width: 25em) {
 
-
+  img {
+    display: block;
+  }
 
 }
 
 @media only screen and (min-width: 38em) {
 
-
+  img {
+    display: block;
+  }
 
 }
 
 @media only screen and (min-width: 60em) {
 
-
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
 
 }
